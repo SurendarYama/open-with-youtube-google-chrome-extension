@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "000000000017",
-        title: 'open with youtube',
+        title: 'Open with youtube',
         contexts: ['selection'],
     },
     function () {
