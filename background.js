@@ -4,7 +4,7 @@ console.log('Happy developing ✨');
 chrome.runtime.onInstalled.addListener(() => {
     console.log('Extension installed');
     chrome.contextMenus.create({
-        id: "123",
+        id: "000000000017",
         title: 'open with youtube',
         contexts: ['selection'],
     },
