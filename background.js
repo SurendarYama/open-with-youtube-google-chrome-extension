@@ -1,14 +1,10 @@
-// https://www.youtube.com/results?search_query=test
-console.log('Happy developing ✨');
-
 chrome.runtime.onInstalled.addListener(() => {
-    console.log('Extension installed');
     chrome.contextMenus.create({
         id: "000000000017",
         title: 'open with youtube',
         contexts: ['selection'],
     },
-     function () {
+    function () {
         if (chrome.runtime.lastError) {
            console.log('Got expected error: ' + chrome.runtime.lastError.message);
         }
