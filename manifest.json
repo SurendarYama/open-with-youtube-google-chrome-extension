@@ -1,0 +1,17 @@
+{
+  "name": "Open With Youtube",
+  "description": "Open Selected Text with YouTube Search",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "youtube-16.png",
+    "48": "youtube-48.png",
+    "128": "youtube-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
