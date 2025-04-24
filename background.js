@@ -10,9 +10,8 @@ chrome.runtime.onInstalled.addListener(() => {
         }
     });
 });
-const handleOnClick = (info, _) => {
-    const selectedText = info.selectionText;
-    const url = `https://www.youtube.com/results?search_query=${selectedText}`;
+const handleOnClick = ({selectionText}, _) => {
+    const url = `https://www.youtube.com/results?search_query=${selectionText}`;
     chrome.tabs.create({ url });
 };
 chrome.contextMenus.onClicked.addListener(handleOnClick);
