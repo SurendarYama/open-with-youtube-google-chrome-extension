@@ -3,11 +3,6 @@ chrome.runtime.onInstalled.addListener(() => {
         id: "000000000017",
         title: 'Open with youtube',
         contexts: ['selection'],
-    },
-    function () {
-        if (chrome.runtime.lastError) {
-           console.log('Got expected error: ' + chrome.runtime.lastError.message);
-        }
     });
 });
 const handleOnClick = ({selectionText}, _) => {
